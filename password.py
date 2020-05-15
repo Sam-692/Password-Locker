@@ -23,11 +23,11 @@ def delete_account(account):
     function to delete the account and reset again
     """
     return account.delete.account()
-# def account_exist(user_name,password):
-#     """
-#     Function to check whether the account username and password exist
-#     """
-#     return Credential.account_exist(user_name,password)
+def account_exist(user_name,password):
+    """
+    Function to check whether the account username and password exist
+    """
+    return Credential.account_exist(user_name,password)
 def create_credential(account_name,user_name,password):
     """
     Function to create new credential
@@ -35,11 +35,11 @@ def create_credential(account_name,user_name,password):
     new_credential=Credential(account_name,user_name,password)  
     return new_credential
 
-def save_credential(credential):
-    """
-    Function to save new credential
-    """
-    credential.save_credential() 
+# def save_credential(credential):
+#     """
+#     Function to save new credential
+#     """
+#     credential.save_credential() 
 def display_credential():
     """
     Function to display all credentials in the list
