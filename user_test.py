@@ -10,22 +10,22 @@ class Testuser(unittest.TestCase):
         unittest.TestCase: TestCase class that helps in creating test cases
     '''
 
-def setUp(self):
-        '''
-        Set up method to run before each test cases.
-        '''
-        self.new_user = User("Samuel","kariuki","mtoto","456yWj.") # create user object
+# def setUp(self):
+#         '''
+#         Set up method to run before each test cases.
+#         '''
+#         self.new_user = User("Samuel","kariuki","mtoto","456yWj.") # create user object
 
 
-def test_init(self):
-        '''
-        test_init test case to test if the object is initialized properly
-        '''
+# def test_init(self):
+#         '''
+#         test_init test case to test if the object is initialized properly
+#         '''
 
-        self.assertEqual(self.new_user.first_name,"Samuel")
-        self.assertEqual(self.new_user.last_name,"Kariuki")
-        self.assertEqual(self.new_user.user_name,"mtoto")
-        self.assertEqual(self.new_user.password,"456yWj.")
+#         self.assertEqual(self.new_user.first_name,"Samuel")
+#         self.assertEqual(self.new_user.last_name,"Kariuki")
+#         self.assertEqual(self.new_user.user_name,"mtoto")
+#         self.assertEqual(self.new_user.password,"456yWj.")
 
 def test_save_user(self):
         '''
@@ -36,17 +36,17 @@ def test_save_user(self):
         self.assertEqual(len(User.user_list),1)
 
 # setup and class creation up here
-# def tearDown(self):
-#             '''
-#             tearDown method that does clean up after each test case has run.
-#             '''
-#             User.user_list = []
+def tearDown(self):
+            '''
+            tearDown method that does clean up after each test case has run.
+            '''
+            User.user_list = []
 
-# def test_display_account(self):
-#         """
-#         method that return a list of acounts
-#         """
-#         self.assertEqual(User.display_account(),User.user_list)
+def test_display_account(self):
+        """
+        method that return a list of acounts
+        """
+        self.assertEqual(User.display_account(),User.user_list)
 # other test cases here
 def test_save_multiple_user(self):
             '''
