@@ -1,5 +1,5 @@
 import unittest # Importing the unittest module
-from user import User # Importing the contact class
+from user import User # Importing the User class
 
 class Testuser(unittest.TestCase):
         '''
@@ -21,10 +21,10 @@ def test_init(self):
         test_init test case to test if the object is initialized properly
         '''
 
-        self.assertEqual(self.new_contact.first_name,"Samuel")
-        self.assertEqual(self.new_contact.last_name,"Kariuki")
-        self.assertEqual(self.new_contact.user_name,"mtoto")
-        self.assertEqual(self.new_contact.password,"456yWj.")
+        self.assertEqual(self.new_user.first_name,"Samuel")
+        self.assertEqual(self.new_user.last_name,"Kariuki")
+        self.assertEqual(self.new_user.user_name,"mtoto")
+        self.assertEqual(self.new_user.password,"456yWj.")
 
 def test_save_user(self):
         '''
@@ -44,11 +44,11 @@ def tearDown(self):
 # other test cases here
 def test_save_multiple_user(self):
             '''
-            test_save_multiple_contact to check if we can save multiple contact
-            objects to our contact_list
+            test_save_multiple_user to check if we can save multiple users
+            objects to our user_list
             '''
             self.new_user.save_user()
-            test_user = User("Test","user","mtoto","785uemd,") # new contact
+            test_user = User("Test","user","mtoto","785uemd,") # new user
             test_user.save_user()
             self.assertEqual(len(User.user_list),2)
 
