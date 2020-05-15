@@ -1,19 +1,19 @@
 #!/usr/bin/env python3.6
 from user import User,Credential
 
-# def create_account(first_name,last_name,user_name,password):
-#     """
-#     function to create new account or to sign up
-#     """
-#     new_account=User(first_name,last_name,user_name,password)
-#     return new_account
+def create_account(first_name,last_name,user_name,password):
+    """
+    function to create new account or to sign up
+    """
+    new_account=User(first_name,last_name,user_name,password)
+    return new_account
 
-def save_account(account): 
-    """
-    Function to save new account 
-    """
-    account.save_account()
-def display_account():
+# def save_account(account): 
+#     """
+#     Function to save new account 
+#     """
+#     account.save_account()
+# def display_account():
     """
     function to display existing account
     """
