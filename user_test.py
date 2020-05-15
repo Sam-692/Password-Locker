@@ -96,26 +96,26 @@ class TestCredential(unittest.TestCase):
         """
         self.new_credential.save_credential()
         self.assertEqual(len(Credential.credential_list),1) 
-    def test_save_multiple_credential(self):
-        """
-        To test how to save multiple
-        """
-        self.new_credential.save_credential()
-        test_credential=Credential('whatsapp',"mtotowanursary",'99278043')
-        test_credential.save_credential()  
-
-        self.assertEqual(len(Credential.credential_list),2)
-    
-#     def test_delete_credential(self):
+#     def test_save_multiple_credential(self):
 #         """
-#         To test if credentail can be deleted
+#         To test how to save multiple
 #         """
 #         self.new_credential.save_credential()
-#         test_credential=Credential('twitter',"mtotowa",'99278043')
+#         test_credential=Credential('whatsapp',"mtotowanursary",'99278043')
 #         test_credential.save_credential()  
 
-#         self.new_credential.delete_credential()
-#         self.assertEqual(len(Credential.credential_list),1)
+#         self.assertEqual(len(Credential.credential_list),2)
+    
+    def test_delete_credential(self):
+        """
+        To test if credentail can be deleted
+        """
+        self.new_credential.save_credential()
+        test_credential=Credential('twitter',"mtotowa",'99278043')
+        test_credential.save_credential()  
+
+        self.new_credential.delete_credential()
+        self.assertEqual(len(Credential.credential_list),1)
     def tearDown(self):
         '''
         tearDown method that does clean up after each test case has run.
