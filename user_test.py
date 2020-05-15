@@ -58,16 +58,16 @@ def test_save_multiple_user(self):
             test_user.save_user()
             self.assertEqual(len(User.user_list),2)
 
-def test_delete_user(self):
-            '''
-            test_delete_user to test if we can remove a user from our user list
-            '''
-            self.new_user.save_user()
-            test_user = User("Test","user","mtoto","785uemd,") # new user
-            test_user.save_user()
+# def test_delete_user(self):
+#             '''
+#             test_delete_user to test if we can remove a user from our user list
+#             '''
+#             self.new_user.save_user()
+#             test_user = User("Test","user","mtoto","785uemd,") # new user
+#             test_user.save_user()
 
-            self.new_user.delete_user()# Deleting a user object
-            self.assertEqual(len(User.user_list),1)
+#             self.new_user.delete_user()# Deleting a user object
+#             self.assertEqual(len(User.user_list),1)
 
 def delete_user(self):
 
@@ -96,15 +96,15 @@ class TestCredential(unittest.TestCase):
         """
         self.new_credential.save_credential()
         self.assertEqual(len(Credential.credential_list),1) 
-#     def test_save_multiple_credential(self):
-#         """
-#         To test how to save multiple
-#         """
-#         self.new_credential.save_credential()
-#         test_credential=Credential('whatsapp',"mtotowanursary",'99278043')
-#         test_credential.save_credential()  
+    def test_save_multiple_credential(self):
+        """
+        To test how to save multiple
+        """
+        self.new_credential.save_credential()
+        test_credential=Credential('whatsapp',"mtotowanursary",'99278043')
+        test_credential.save_credential()  
 
-#         self.assertEqual(len(Credential.credential_list),2)
+        self.assertEqual(len(Credential.credential_list),2)
     
     def test_delete_credential(self):
         """
