@@ -35,22 +35,22 @@ def create_credential(account_name,user_name,password):
     new_credential=Credential(account_name,user_name,password)  
     return new_credential
 
-# def save_credential(credential):
-#     """
-#     Function to save new credential
-#     """
-#     credential.save_credential() 
-def display_credential():
+def save_credential(credential):
     """
-    Function to display all credentials in the list
+    Function to save new credential
     """
-    return Credential.display_credentials()    
+    credential.save_credential() 
+# def display_credential():
+#     """
+#     Function to display all credentials in the list
+#     """
+#     return Credential.display_credentials()    
 
-def delete_credential(credential):
-    """
-    function to delete a credential in the credential_list
-    """
-    credential.delete_credential()
+# def delete_credential(credential):
+#     """
+#     function to delete a credential in the credential_list
+#     """
+#     credential.delete_credential()
 def search_credential(account_name):
     """
     Function to search credential and returns it from credentia_list
