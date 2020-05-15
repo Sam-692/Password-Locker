@@ -8,12 +8,12 @@ def create_account(first_name,last_name,user_name,password):
     new_account=User(first_name,last_name,user_name,password)
     return new_account
 
-# def save_account(account): 
-#     """
-#     Function to save new account 
-#     """
-#     account.save_account()
-# def display_account():
+def save_account(account): 
+    """
+    Function to save new account 
+    """
+    account.save_account()
+def display_account():
     """
     function to display existing account
     """
@@ -23,11 +23,11 @@ def delete_account(account):
     function to delete the account and reset again
     """
     return account.delete.account()
-def account_exist(user_name,password):
-    """
-    Function to check whether the account username and password exist
-    """
-    return Credential.account_exist(user_name,password)
+# def account_exist(user_name,password):
+#     """
+#     Function to check whether the account username and password exist
+#     """
+#     return Credential.account_exist(user_name,password)
 def create_credential(account_name,user_name,password):
     """
     Function to create new credential
