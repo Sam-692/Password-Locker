@@ -36,11 +36,11 @@ def test_save_user(self):
         self.assertEqual(len(User.user_list),1)
 
 # setup and class creation up here
-def tearDown(self):
-            '''
-            tearDown method that does clean up after each test case has run.
-            '''
-            User.user_list = []
+# def tearDown(self):
+#             '''
+#             tearDown method that does clean up after each test case has run.
+#             '''
+#             User.user_list = []
 
 def test_display_account(self):
         """
