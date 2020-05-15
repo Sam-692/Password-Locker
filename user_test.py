@@ -106,16 +106,16 @@ class TestCredential(unittest.TestCase):
 
         self.assertEqual(len(Credential.credential_list),2)
     
-    def test_delete_credential(self):
-        """
-        To test if credentail can be deleted
-        """
-        self.new_credential.save_credential()
-        test_credential=Credential('twitter',"mtotowa",'99278043')
-        test_credential.save_credential()  
+#     def test_delete_credential(self):
+#         """
+#         To test if credentail can be deleted
+#         """
+#         self.new_credential.save_credential()
+#         test_credential=Credential('twitter',"mtotowa",'99278043')
+#         test_credential.save_credential()  
 
-        self.new_credential.delete_credential()
-        self.assertEqual(len(Credential.credential_list),1)
+#         self.new_credential.delete_credential()
+#         self.assertEqual(len(Credential.credential_list),1)
     def tearDown(self):
         '''
         tearDown method that does clean up after each test case has run.
