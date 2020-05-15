@@ -25,13 +25,14 @@ As a user i would like to.... :
 
 * Open Terminal {Ctrl+Alt+T}
 
-* git clone ```https://github.com/barackmaund1/Password-locker.git```
+* git clone ```https://github.com/Sam-692/Password-Locker.git```
 
 * cd Password-Locker
 
 * code . or atom . based on the text editor you have.
 
 ### Running the Application
+
 * To run the application, open the cloned file in terminal and run the following commands:
 
         $ chmod +x password.py
