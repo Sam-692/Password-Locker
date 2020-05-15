@@ -51,11 +51,11 @@ def delete_credential(credential):
     function to delete a credential in the credential_list
     """
     credential.delete_credential()
-# def search_credential(account_name):
-#     """
-#     Function to search credential and returns it from credentia_list
-#     """
-#     return Credential.search_credential(account_name) 
+def search_credential(account_name):
+    """
+    Function to search credential and returns it from credentia_list
+    """
+    return Credential.search_credential(account_name) 
 def if_credential_exist(account_name):
     """
     Function that search credential with account name and if finds it returns true otherwise false
