@@ -6,7 +6,7 @@
 
 This project is a python application that helps people in creating accounts and keeping credentials for future use.it helps in keeping accounts details like username and password
 ## User Stories
-The user would like to.... :
+As a user i would like to.... :
 * To create an account for the application or log into the application.
 * Store my existing acounts login details for various accounts that i have registered for.
 * Generate new password for an account that i haven't registered for and store it with the account name.   
@@ -55,13 +55,10 @@ The user would like to.... :
 
 * python3.6
 
-## Known Bugs
-* There are no known bugs currently but pull requests are allowed incase you spot a bug
-
 ## Contact Information 
 
-If you have any question or contributions, please email me at [pmaundu49@gmail.com]
+Fell free to reachout on [samuelariuki@gmail.com]
 
 ## License
 * *MIT License:*
-* Copyright (c) 2019 **Barack maundu**
+* Copyright (c) 2019 **Samuel Kariuki**
